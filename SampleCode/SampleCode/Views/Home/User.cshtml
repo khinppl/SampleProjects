@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    <title>Save User Data</title>
+</head>
+<link rel="stylesheet" href="~/css/style.css" />
+<body>
+    <h1>Enter your details</h1>
+
+    <form method="post" action="/Home/SaveUser">
+        <div>
+            <label for="FirstName">First Name</label>
+            <input type="text" id="FirstName" name="FirstName" value="@Model?.FirstName" required />
+        </div>
+        <div>
+            <label for="LastName">Last Name</label>
+            <input type="text" id="LastName" name="LastName" value="@Model?.LastName" required />
+        </div>
+        <button type="submit">Submit</button>
+
+          @if (!string.IsNullOrEmpty(ViewBag.Message))
+        {
+            <div class="success-message">
+                @ViewBag.Message
+            </div>
+        }
+    </form>
+
+    @if (Model != null)
+    {
+        <h3>Saved User Data</h3>
+        <p>First Name: @Model.FirstName</p>
+        <p>Last Name: @Model.LastName</p>
+    }
+</body>
+</html>
