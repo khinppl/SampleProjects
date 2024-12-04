@@ -8,28 +8,28 @@ Frontend:**
 
 **Backend:**
 
-  The HomeController processes the form data in the Post method.
-  
-  The submitted data is serialized into JSON and saved to a file named UserName.json.
+     The HomeController processes the form data in the Post method.
+     The submitted data is serialized into JSON and saved to a file named UserName.json.
 
 **File Structure**
 
-/Controllers  
-  - HomeController.cs  
-/Models  
-  - User.cs  
-/Views  
-  /Home  
-    - User.cshtml  
-/wwwroot
-  /css  
-  - Style.css  
 
-Example Data in UserName.json
-json
+     /Controllers  
+       - HomeController.cs  
+     /Models  
+       - User.cs  
+     /Views  
+       /Home  
+         - User.cshtml  
+     /wwwroot
+       /css  
+       - Style.css  
 
-{  
-  "FirstName": "John",  
-  "LastName": "Doe"  
-}  
+**Example Data in UserName.json**
+**json**
+
+     {  
+       "FirstName": "John",  
+       "LastName": "Doe"  
+     }  
 
