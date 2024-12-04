@@ -2,8 +2,8 @@
 
 **How It Works
 Frontend:**
-    The form is rendered in a Razor view (Views/Home/User.cshtml).
-  
+     
+     The form is rendered in a Razor view (Views/Home/User.cshtml).
      Users input First Name and Last Name and submit the form.
 
 **Backend:**
