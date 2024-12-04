@@ -9,7 +9,7 @@ Users input First Name and Last Name and submit the form.
 **Backend:**
 
 The HomeController processes the form data in the Post method.
-The submitted data is serialized into JSON and saved to a file named FormData.json in the App_Data (or a similar) directory.
+The submitted data is serialized into JSON and saved to a file named UserName.json.
 
 **File Structure**
 
