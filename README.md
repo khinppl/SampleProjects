@@ -3,13 +3,15 @@
 **How It Works
 Frontend:**
 
-The form is rendered in a Razor view (Views/Home/User.cshtml).
-Users input First Name and Last Name and submit the form.
+  The form is rendered in a Razor view (Views/Home/User.cshtml).
+  
+  Users input First Name and Last Name and submit the form.
 
 **Backend:**
 
-The HomeController processes the form data in the Post method.
-The submitted data is serialized into JSON and saved to a file named UserName.json.
+  The HomeController processes the form data in the Post method.
+  
+  The submitted data is serialized into JSON and saved to a file named UserName.json.
 
 **File Structure**
 
